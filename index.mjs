@@ -126,6 +126,10 @@ function main() {
     const title = document.createElement("h1");
     title.innerHTML = "Snowflake generator!";
     body.appendChild(title);
+    const sourceCodeLink = document.createElement("a");
+    sourceCodeLink.href = "https://github.com/HatsuSixty/snowflake";
+    sourceCodeLink.innerHTML = "Source code";
+    body.appendChild(sourceCodeLink);
     const ctx = renderer.createCanvas(body, "snowflake-canvas", WIDTH, HEIGHT);
     createUI(body, ctx);
     renderer.createLoop(ctx, update);

@@ -14,6 +14,7 @@
         @media (prefers-color-scheme: light) {
             body {
                 background-color: white;
+                --link-color: blue;
             }
         }
 
@@ -21,6 +22,7 @@
             body {
                 background-color: #3C1830;
                 color: #FFD0ED;
+                --link-color: #4BE5FF;
             }
         }
 
@@ -34,6 +36,11 @@
                 float: none;
                 margin-right: initial;
             }
+        }
+
+        a {
+            color: var(--link-color);
+            text-decoration: none;
         }
     </style>
 </head>
